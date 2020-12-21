@@ -1,0 +1,39 @@
+FONTE: Calibri (Corpo)
+BRANCO (RGB: 255,255,255)
+MARRON: (RGB 99,45,9)
+DOURADO: (RGB 173,131,0)
+
+Assistente Super----
+Ajuda (Tamanho Fonte: 10,5)
+Agendar (Tamanho Fonte: 18)
+Avaliação (Tamanho Fonte: 24)
+
+Assistente Lateral----
+Facial (Tamanho Fonte: 10,5)
+Corporall (Tamanho Fonte: 10,5)
+
+
+Para quem são os nossos serviços (Tamanho Fonte: 37)
+
+São para todos que se comprometem em alinhar a estética com a autoestima. 
+Para quem foge dos padrões das 
+clínicas de estética para busca 
+de exclusividade e resultados 
+pautados na ciência. (Tamanho Fonte: 15)
+
+
+Faça Sua Avaliação! (Tamanho Fonte: 24)
+R. Borges Lagoa, 1065 (Tamanho Fonte: 20)
+5 Min do Metrô Hospital São Paulo (Tamanho Fonte: 12)
+falecomigo@gbelyestetica.com (Tamanho Fonte: 11)
+
+
+Avaliação (Tamanho Fonte: 24)
+R$ (Tamanho Fonte: 20)
+150 (Tamanho Fonte: 115
+,00 (Tamanho Fonte: 24)
+
+
+
+
+

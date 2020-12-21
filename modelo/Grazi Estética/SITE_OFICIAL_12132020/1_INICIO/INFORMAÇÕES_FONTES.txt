@@ -1,0 +1,19 @@
+FONTE: Calibri (Corpo)
+BRANCO rgb(255,255,255)
+MARRON: rgb(99,45,9)
+DOURADO: rgb(173,131,0)
+
+
+Assistente Super----
+Ajuda (Tamanho Fonte: 10,5)
+Agendar (Tamanho Fonte: 18)
+Avaliação (Tamanho Fonte: 24)
+
+Assistente Lateral----
+Facial (Tamanho Fonte: 10,5)
+Corporall (Tamanho Fonte: 10,5)
+
+
+Protocolos Exclusivos para o Seu Momento (Tamanho Fonte: 36)
+
+Venha Conhecer a Técnica Metaformosa (Tamanho Fonte: 12)
