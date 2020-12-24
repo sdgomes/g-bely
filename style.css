@@ -164,6 +164,7 @@ button:focus {
 }
 
 .nav-button {
+    cursor: pointer;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 0;
@@ -714,9 +715,23 @@ a {
     .booking-label>span:last-child {
         font-size: .81rem;
     }
+    .camera,
+    .calendario {
+        width: 79px;
+    }
 }
 
 @media (max-width: 575.98px) {
+    .booking-title {
+        font-size: 2.5rem;
+    }
+    .booking-label {
+        min-width: 195px;
+        max-width: 195px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .icon-modal {
         display: none;
     }
@@ -784,5 +799,21 @@ a {
     .header>.bg-golden {
         top: -810px;
         transform: scale(2.5);
+    }
+}
+
+@media(max-width: 375.98px) {
+    .booking-label {
+        min-width: 100%;
+        margin-bottom: 1rem;
+    }
+    .book-list>li {
+        justify-content: space-evenly;
+    }
+    .btn-side-modal {
+        max-width: 80px;
+    }
+    .back-site {
+        max-width: 75px;
     }
 }
