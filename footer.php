@@ -3,10 +3,10 @@
     <div id="mySidenav" class="package">
         <div class="w-100 row align-items-center justify-content-center">
             <div class="col-6">
-                <button data-href="#v-pills-facial-tab" class="assistent-action-button"><img draggable="false" class="w-100" src="./images/face_icon.png" alt="Icone_de_rosto/png"><span class="d-block">Facial</span></button>
+                <button data-href="#v-pills-facial-tab" class="assistent-action-button"><img draggable="false" class="w-100" src="<?php bloginfo('template_url') ?>/images/face_icon.png" alt="Icone_de_rosto/png"><span class="d-block">Facial</span></button>
             </div>
             <div class="col-6">
-                <button data-href="#v-pills-corporal-tab" class="assistent-action-button "><img draggable="false" class="w-100" src="./images/body_icon.png" alt="Icone_de_corpo/png"><span class="d-block">Corporal</span></button>
+                <button data-href="#v-pills-corporal-tab" class="assistent-action-button "><img draggable="false" class="w-100" src="<?php bloginfo('template_url') ?>/images/body_icon.png" alt="Icone_de_corpo/png"><span class="d-block">Corporal</span></button>
             </div>
         </div>
     </div>
@@ -19,37 +19,46 @@
             <div class="row align-items-start">
                 <div class="nav flex-column nav-pills me-4 nav-booking" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <div class="icon-modal">
-                        <img draggable="false" class="w-100" src="./images/white-butterfly-logo.png" alt="Logo_de_borboleta_branca/png">
+                        <img draggable="false" class="w-100" src="<?php bloginfo('template_url') ?>/images/white-butterfly-logo.png" alt="Logo_de_borboleta_branca/png">
                     </div>
-                    <a class="btn-side-modal" id="v-pills-facial-tab" data-bs-toggle="pill" href="#v-pills-facial" role="tab" aria-controls="v-pills-facial" aria-selected="false" title="Facial"><img draggable="false" class="w-100" src="./images/face_icon.png" alt="Icone_de_rosto/png"></a>
-                    <a class="btn-side-modal" id="v-pills-corporal-tab" data-bs-toggle="pill" href="#v-pills-corporal" role="tab" aria-controls="v-pills-corporal" aria-selected="false" title="Corporal"><img draggable="false" class="w-100" src="./images/body_icon.png" alt="Icone_de_corpo/png"></a>
+                    <a class="btn-side-modal" id="v-pills-facial-tab" data-bs-toggle="pill" href="#v-pills-facial" role="tab" aria-controls="v-pills-facial" aria-selected="false" title="Facial"><img draggable="false" class="w-100" src="<?php bloginfo('template_url') ?>/images/face_icon.png" alt="Icone_de_rosto/png"></a>
+                    <a class="btn-side-modal" id="v-pills-corporal-tab" data-bs-toggle="pill" href="#v-pills-corporal" role="tab" aria-controls="v-pills-corporal" aria-selected="false" title="Corporal"><img draggable="false" class="w-100" src="<?php bloginfo('template_url') ?>/images/body_icon.png" alt="Icone_de_corpo/png"></a>
                     <button type="button" class="back-site" data-bs-dismiss="modal">voltar ao site</button>
                 </div>
                 <div class="col tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade" id="v-pills-facial" role="tabpanel" aria-labelledby="v-pills-facial-tab">
                         <h1 class="booking-title">Facial</h1>
-                        <ul class="p-0 book-list">
-                            <li>
-                                <label class="booking-label"><span>Micro Renovation</span><span>Micropgmen... (Fio a
-                                        Fio /
-                                        Shadow)</span></label>
-                                <button type="button" class="camera" onclick="carouselModal.show()"><img draggable="false" class="w-100" src="./images/camera.png" alt="Camera/png"></button>
-                                <button type="button" class="calendario"><img draggable="false" class="w-100" src="./images/calendario.png" alt="Camera/png"></button>
-                            </li>
+                        <?php
+                        $facial = ['Micro Renovation', 'Retoque Micro', 'Micro Remotion', 'Remoção de Manchas', 'Melasmed', 'Microagulhamento', 'ClearUp', 'Acneclear', 'Rejuvenecimento', 'Amenização de Estrias', 'Drenoxizero', 'Namastê'];
+                        ?>
+                        <ul class="p-0 book-list scroll-block">
+                            <?php for ($i = 0; $i < count($facial); $i++) { ?>
+                                <li>
+                                    <label class="booking-label"><span><?php echo $facial[$i] ?></span></label>
+                                    <button type="button" class="camera" onclick="carouselModal.show()"><img draggable="false" class="w-100" src="<?php bloginfo('template_url') ?>/images/camera.png" alt="Camera/png"></button>
+                                    <button type="button" class="calendario"><img draggable="false" class="w-100" src="<?php bloginfo('template_url') ?>/images/calendario.png" alt="Camera/png"></button>
+                                </li>
+                            <?php } ?>
                         </ul>
                     </div>
                     <div class="tab-pane fade" id="v-pills-corporal" role="tabpanel" aria-labelledby="v-pills-corporal-tab">
                         <h1 class="booking-title">Corporal</h1>
-                        <ul class="p-0 book-list">
-                            <li>
-                                <label class="booking-label"><span>Micro Renovation</span><span>Micropgmen... (Fio a
-                                        Fio /
-                                        Shadow)</span></label>
-                                <button type="button" class="camera" onclick="carouselModal.show()"><img draggable="false" class="w-100" src="./images/camera.png" alt="Camera/png"></button>
-                                <button type="button" class="calendario"><img draggable="false" class="w-100" src="./images/calendario.png" alt="Camera/png"></button>
-                            </li>
+                        <?php
+                        $corporal = ['Fortalecimento Muscular', 'Amenização de Estrias', 'Modelize', 'Drenoxizero', 'Namastê'];
+                        ?>
+                        <ul class="p-0 book-list scroll-block">
+                            <?php for ($i = 0; $i < count($corporal); $i++) { ?>
+                                <li>
+                                    <label class="booking-label"><span><?php echo $facial[$i] ?></span></label>
+                                    <button type="button" class="camera" onclick="carouselModal.show()"><img draggable="false" class="w-100" src="<?php bloginfo('template_url') ?>/images/camera.png" alt="Camera/png"></button>
+                                    <button type="button" class="calendario"><img draggable="false" class="w-100" src="<?php bloginfo('template_url') ?>/images/calendario.png" alt="Camera/png"></button>
+                                </li>
+                            <?php } ?>
                         </ul>
                     </div>
+                </div>
+                <div class="col">
+
                 </div>
             </div>
         </div>
@@ -61,7 +70,7 @@
     <div class="modal-dialog pt-5 mt-5">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="carouselModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="carouselModalLabel">Galeria</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body px-0">

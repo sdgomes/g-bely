@@ -1,10 +1,22 @@
+<style>
+    <?php if (get_the_post_thumbnail()) : ?>.root {
+        background: linear-gradient(to left, rgb(255 255 255 / 0.89) 0, rgb(255 255 255 / 0.89) 100%, rgb(255, 255, 255) 90%), url(<?php the_post_thumbnail_url(); ?>);
+    }
+
+    <?php else : ?>.root {
+        background: linear-gradient(to left, rgb(255 255 255 / 0.89) 0, rgb(255 255 255 / 0.89) 100%, rgb(255, 255, 255) 90%), url(<?php bloginfo('template_url'); ?>/images/background-half-page.png);
+    }
+
+    <?php endif; ?>
+</style>
+
 <div class="root">
     <section class="first">
         <div class="header">
             <div class="bg-golden"></div>
             <div class="box">
                 <h1 class="title">
-                    <img draggable="false" class="butterfly-animation" src="./images/white-butterfly-logo.png" alt="Logo_de_borboleta_branca/png">
+                    <img draggable="false" class="butterfly-animation" src="<?php bloginfo('template_url') ?>/images/white-butterfly-logo.png" alt="Logo_de_borboleta_branca/png">
                     <div class="title-words-content">
                         <small>Centro Estético</small>
                         <span class="text-uppercase">G'BELY</span>
@@ -28,8 +40,8 @@
                             <h5 class="fw-normal">Juntos Contra <br>o vírus</h5>
                         </div>
                         <div class="blonde-woman">
-                            <img draggable="false" src="./images/circle.png" alt="Fundo_redondo/png">
-                            <img draggable="false" class="w-100" src="./images/woman.png" alt="Mulher_loira/png">
+                            <img draggable="false" src="<?php bloginfo('template_url') ?>/images/circle.png" alt="Fundo_redondo/png">
+                            <img draggable="false" class="w-100" src="<?php bloginfo('template_url') ?>/images/woman.png" alt="Mulher_loira/png">
                         </div>
                     </div>
                     <div class="text-end second-section">
@@ -74,19 +86,19 @@
                             <iframe src="https://www.youtube.com/embed/bQO7FYftNh8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="row link-group">
-                            <a class="text-white" href="https://www.instagram.com/esteticagrazielacarvalho_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a class="text-white" href="https://www.instagram.com/gbely_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                             <a class="text-white" href="https://www.youtube.com/channel/UCMu3zkZ5vkavvnbh6XBST7Q" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
                             <a class="text-white" href="https://www.facebook.com/esteticagrazielacarvalho" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                         </div>
                         <div class="second-section-ceo">
                             <div data-aos="fade-up" data-aos-duration="1000" class="ceo-image">
-                                <img draggable="false" src="./images/white-butterfly-logo.png" alt="Logo_de_borboleta_branca/png">
-                                <img draggable="false" src="./images/ceo-image-center.png" alt="CEO_image/png">
+                                <img draggable="false" src="<?php bloginfo('template_url') ?>/images/white-butterfly-logo.png" alt="Logo_de_borboleta_branca/png">
+                                <img draggable="false" src="<?php bloginfo('template_url') ?>/images/ceo-image-center.png" alt="CEO_image/png">
                             </div>
                         </div>
                         <div class="spine-foot third-section-ceo">
                             <div data-aos="zoom-in" class="d-flex">
-                                <img draggable="false" class="butterfly-animation" src="./images/white-butterfly-logo.png" alt="Logo_de_borboleta_branca/png">
+                                <img draggable="false" class="butterfly-animation" src="<?php bloginfo('template_url') ?>/images/white-butterfly-logo.png" alt="Logo_de_borboleta_branca/png">
                                 <h1>Avaliação</h1>
                             </div>
                             <div data-aos="zoom-in" class="align-items-center justify-content-center d-flex">
@@ -99,7 +111,7 @@
 
             </div>
 
-            <div class="row my-5 py-4">
+            <div class="row my-4">
                 <div class="col-lg-4 col-md-6 left-info">
                     <div class="text-end">
                         <h1 data-aos="zoom-in" class="fw-bold">Faça Sua Avaliação!</h1>
@@ -125,7 +137,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 spine-footer">
                         <div class="row link-group">
-                            <a class="text-white" href="https://www.instagram.com/esteticagrazielacarvalho_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a class="text-white" href="https://www.instagram.com/gbely_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                             <a class="text-white" href="https://www.youtube.com/channel/UCMu3zkZ5vkavvnbh6XBST7Q" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
                             <a class="text-white" href="https://www.facebook.com/esteticagrazielacarvalho" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                         </div>
